@@ -2,11 +2,11 @@
 
 get_header();
 
-$title = get_field('page_title');
-$description = get_field('page_description');
-$link = get_field('page_link');
-$heroImageArray = get_field('page_image');
-$heroImage = $heroImageArray['sizes']['large'];
+$title = get_field('home_title');
+$description = get_field('home_description');
+$link = get_field('home_link');
+$homeImageArray = get_field('home_image');
+$homeImage = $homeImageArray['sizes']['large'];
 
 
 $about_title = get_field('about_title');
@@ -16,12 +16,12 @@ $aboutImage = $aboutImageArray['sizes']['large'];
 
 ?>
 
-  <section class="green-bg" id="hero">
+  <section class="green-bg" id="home">
     <div class="container">
       <div class="d-flex flex-row-reverse justify-content-center p-4">
         <div class="row d-flex flex-row-reverse">
           <div class="col-lg-6">
-            <img class="img-fluid" src="<?php echo $heroImage; ?>">
+            <img class="img-fluid" src="<?php echo $homeImage; ?>">
           </div>
           <div class="col-lg-6 text-light d-flex flex-column justify-content-center align-items-center">
             <h1 class="display-1"><?php echo $title; ?></h1>
@@ -37,25 +37,7 @@ $aboutImage = $aboutImageArray['sizes']['large'];
     </div>
   </section>
 
-  <section class="generic" id="about">
-    <div class="container">
-      <h2 class="display-5 mb-2"><?php echo $about_title; ?></h2>
-      <div class="row mb-3">
-        <div class="col-sm-12 col-md-6">
-          <div class="d-flex h-50 flex-column justify-content-center mt-5">
-            <p>
-                <?php echo $about_desc; ?>
-            </p>
-          </div>
-        </div>
 
-        <div class="col-sm-12 col-md-3 p-0">
-          <img class="img-fluid" src="<?php echo $aboutImage; ?>">
-        </div>
-        <div class="col-sm-12 col-md-3"></div>
-      </div>
-    </div>
-  </section>
 
 
 <?php
