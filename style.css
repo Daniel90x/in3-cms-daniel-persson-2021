@@ -7,8 +7,14 @@ Text Domain: in3-cms-daniel-persson-2021
     background: darkgreen;
 }
 
+.red-bg {
+    background: darkred;
+
+}
+
+
 header {
-    height: 100vh;
+    height: 10vh;
 }
 
 .generic {
