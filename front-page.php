@@ -9,11 +9,6 @@ $homeImageArray = get_field('home_image');
 $homeImage = $homeImageArray['sizes']['large'];
 
 
-$about_title = get_field('about_title');
-$about_desc = get_field('about_description');
-$aboutImageArray = get_field('about_image');
-$aboutImage = $aboutImageArray['sizes']['large'];
-
 ?>
 
   <section class="green-bg" id="home">
