@@ -12,6 +12,10 @@ Text Domain: in3-cms-daniel-persson-2021
 
 }
 
+.blue-bg {
+    background: blue;
+
+}
 
 header {
     height: 10vh;
